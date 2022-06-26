@@ -18,6 +18,7 @@
     "game",
     "input"
   ],
+  "repository": "https://github.com/uiui611/abstract-inputs",
   "author": "mizu-mizu",
   "license": "MIT",
   "devDependencies": {
