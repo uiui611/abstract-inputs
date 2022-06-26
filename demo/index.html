@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <title>Abstract Input Demo</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script type="module" src="demo.js"></script>
+</head>
+<body>
+  <div class="nav-block">
+    <nav>
+      <label for="key-name-input">Code:</label>
+      <input id="key-name-input" value="keyTEST">
+      <code class="sub">({key code})</code>
+      <button id="reserve-button">RESERVE ON 1 SEC</button>
+    </nav>
+    <nav>
+      <label for="commands-input">Command:</label>
+      <textarea id="commands-input">10:dKeyA&#13;11:uKeyA dKeyB&#13;100:uKeyB</textarea><br />
+      <code class="sub">({frame number}:{u|d}{key code}[ {u|d}{key code}]...)</code>
+      <button id="commit-commands-button">RESERVE ON 1 SEC</button>
+    </nav>
+  </div>
+  <main>
+    <section>
+      <h2>Down Keys</h2>
+      <ul id="down-keys">
+        <li>no keys</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Input Log<code class="sub">({frame number}{up|down}{key code}[, {up|down}{key code}]...)</code></h2>
+      <ol id="input-logs">
+        <li>no logs</li>
+      </ol>
+    </section>
+  </main>
+</body>
+</html>
