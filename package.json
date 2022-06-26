@@ -1,6 +1,6 @@
 {
   "name": "@mizu-mizu/abstract-inputs",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "キーボードからのユーザー入力を管理する",
   "main": "dist/abstract-inputs.js",
   "types": "dist/index.d.ts",
