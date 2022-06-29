@@ -6,17 +6,26 @@ import pkg from './package.json'
 
 const name = pkg.name.replace(/^@.*\//, '')
 
+const banner = `/*
+ @mizu-mizu/abstract-inputs.js VERSION ${pkg.version}
+ Released under the MIT License.
+ https://raw.githubusercontent.com/uiui611/abstract-inputs/master/LICENSE
+*/
+`
+
 export default [
   {
     input: 'src/index.ts',
     output: [
       {
+        banner,
         name,
         file: `dist/${name}.js`,
         format: 'umd',
         sourcemap: 'inline',
       },
       {
+        banner,
         name,
         file: `dist/${name}.mjs`,
         format: 'es',
